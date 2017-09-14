@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body, #app {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.app {
+	width: 65%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.contactForm {
+	width: 50%;
+	border: 2px solid black;
+	padding: 1%;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.contactForm>input {
+	margin: 2px;
+}
+
+.contactForm>input:nth-child(3) {
+	display: block;
+	margin: 0 auto;
+}
+
+.contactForm>button {
+	border: 0;
+	display: inline-block;
+	width: 50%;
+	background-color: lightblue;
+	border-radius: 2px;
+	box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+ul.contactsList {
+	display: block;
+	list-style-type: none;
+	border: 2px solid black;
+	width: 50%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+ul.contactsList>.contactItem {
+	margin: 10px;
+	padding: 0;
+	height: 75px;
+	border: 1px solid black;
+	background-color: rgb(206, 254, 255);
+}
+
+.contactItem::before, .contactItem::after {
+  content: "";
+  display: table;
+}
+
+.contactItem::after {
+  clear: both;
+}
+
+ul.contactsList>.contactItem>.contactImage {
+	display: inline;
+	height: 75px;
+	padding: 10px;
+	float: left;
+}
+
+ul.contactsList>.contactItem>*:not(.contactImage) {
+	display: block;
+	padding: 2px 0 0 0;
+	margin: 0 20px 0 0;
+	text-align: right;
+}
